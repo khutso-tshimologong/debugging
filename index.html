@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>App Factory 2022</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,600;0,700;1,400&family=Source+Sans+Pro:ital,wght@0,700;0,900;1,700;1,900&display=swap"
+		rel="stylesheet">
+		<style>
+			/* .dropbtn {
+			  background-color: #04AA6D;
+			  color: white;
+			  padding: 16px;
+			  font-size: 16px;
+			  border: none;
+			} */
+			
+			
+			</style>
+	
+	<!-- <link rel="stylesheet" href="./WeatherMap/src/style.css"> -->
+	<link href="./css/style.css" rel="stylesheet">
+    <meta http-equiv="Refresh" content="120">
+</head>
+</head>
+
+<body>
+	<div class="wrapper">
+
+		<header>
+			<nav class="container">
+				<img src="./img/logo.png" >		
+				
+				<ul>
+					<li><a href="#">Home</a></li>
+					<li><a href="#">Brand</a></li>
+					<div class="dropdown">
+						<li><a class="dropbtn" href="#">Projects</a></li>
+						<div class="dropdown-content">
+							<a href="./ToDoList/todolist.html">To Do List</a>
+							<a href="./WeatherMap/src/weathermap.html">Weather App </a>
+							<a href="./SpongeBob/spongebob.html">SpongeBob's Profile</a>
+							<a href="./AlienAbduction/alien.html"> Alien Abduction</a>
+						</div>
+					</div>
+					<div class="dropdown">
+					<li><a class="dropbtn" href="#">Team</a></li>
+						<div class="dropdown-content">
+							<a href="#">The Dev Crew</a>
+							<a href="#">The Atoms</a>
+							<a href="#">The Techies</a>
+						</div>
+					</div>
+					<li><a href="#">About Programme</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<section class="cloud">
+			<canvas id="canvas"></canvas>
+				
+			
+		</section>
+		
+
+		<section class="goals">
+			
+			<!-- left div -->
+			<div class="column-div">
+				<h2 class="sec1H">Inquisitive</h2>
+				<p>Every industry, no matter how big or small, is undergoing <b><i>Technology-driven</i></b> changes as fast as the eye can see. 
+					Having to work as a team contributed so much to our learning skills as we were so curious about the anormaly task being given weekly.
+				</p>
+			</div>
+			<div class="column-div">
+				<h2 class="sec1H">Determination</h2>
+				<p>Goals cannot be met unless you do the work. It's supposed to be hard. If it were easy, everybody would do it. 
+				   The hard is what makes it great.” So when you’re a determined person you stick to your goals, or purpose-driven pursuits, because you believe it is what you must do without question.
+				</p>
+			</div>
+			<div class="column-div">
+				<h2 class="sec1H">Optimistic</h2>
+				<p>Impossible challenges and unachieved goals exist but being an optimist nothing is a <b><i>failure.</i></b> As we set ourselves in motion in spite of any obstacles, The simple act of working to achieve a goal will make anyone feel alive. In contrast, those who haven’t fulfilled their dreams or desires tend to see life through a negative lens.</p>
+			</div>
+			<!-- center -->
+			<div class="column-div">
+				<h2 class="sec1H">Intelligence</h2>
+				<p>The smartest folks are able to admit when they aren’t familiar with a particular concept. Thus making one Intelligent. And willing to accept and consider other views with value and broad-mindedness maakes a great team to work with and archieve a certain goal.</p>
+			</div>
+			
+		</section>
+		
+		<section class="sec3 container">
+			
+			<div class="left-bar">
+				<img src="./img/team/1 (2).jpeg">
+			</div>
+			<div class="right-bar">
+				<h2>ABOUT</h2>
+
+				<p>Our Software Development Internship Programmes addresses the challenge of graduates struggling to find jobs in software development. Research has shown that graduates do not have sufficient knowledge or skills to enter the working environment and become productive in a relatively short period.  At the same time, employers prefer to wait for developers with at least 2 to 4 years’ experience before they would be considered for job placement. In the meantime, the industry continues to outsource beyond our shores.
+
+					Software Development Internships therefore offer an opportunity for candidates are competing to get selected and that is recognised by employers as a source of quality candidates. This programme is aiming to achieve 100% employment using the Tshimologong networks</p>
+
+			</div>
+		</section>
+		<section class="space">
+			<h1 class="clock" id="clock"></h1>
+			<section class="current">
+				<div class="current-info">
+					<div class="current-location">
+						<div class="temp">
+							<img src="./img/partly-cloudy-day.png" alt="Cloud Icon" id="showIcon" class="current-icon">
+							<h2 id="currentTemp">00&deg;</h2>
+						</div>
+						<div>
+							<!-- <img class="pin-icon" src="./img/location.png" alt="Location Pin"> -->
+							<h2 class="location-name" id="currentLocation"></h2>
+						</div>
+					</div>
+					<div class="desc">
+						<p class="feels-like" id="feelsLike"></p>
+						<p class="description" id="description">Cloudy</p>
+	
+					</div>
+				</div>
+	
+				<div class="hourly-forecast" id="hourlyForecast"></div>
+			</section>
+		</section>
+		
+
+		<section class="locationPart">
+			<aside>
+			
+				
+			
+					<address>
+						<h2>Our Location</h2>
+						<ul>
+							<li>Tshimologong Precinct </li>
+							<li>41 Juta Street </li>
+							<li>Braamfontein </li>
+							<li>Johannesburg</li>
+						</ul>
+					</address>
+			
+					<iframe
+						src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3580.0643656546868!2d28.029705815351612!3d-26.19458438344202!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e950c1b6a6a1df1%3A0xc45fc4ca472e6a2f!2s41%20Juta%20St%2C%20Braamfontein%2C%20Johannesburg%2C%202000!5e0!3m2!1sen!2sza!4v1642593471384!5m2!1sen!2sza"
+						width="400" height="300" allowfullscreen="" loading="lazy">
+					</iframe>
+			 
+			</aside>
+		</section>
+
+		<footer>
+			<svg width="96px" height="96px" viewBox="0 0 512 512" enable-background="new 0 0 512 512" xml:space="preserve">
+				<path id="time-3-icon" .../>
+				</svg>
+				<img src="./img/tshimologong-logo.svg.png">
+				<p>©2022. All rights reserved. <i></i> ...</p>
+		</footer>
+		</div>
+
+		<script src="./main.js"></script>
+		<script src="./WeatherMap/src/app.js"></script>
+		<script src="./WeatherMap/src/config.js"></script>
+
+</body>
+
+</html>
